@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="script.js"></script> 
 
 </head>
 
@@ -10,22 +11,8 @@
         <h1>Информация за мен</h1>
     </header>
     
-<section id="login-box">
-    <div class="login-top">
-        <h1>ФОРМА ЗА АВТОРИЗАЦИЯ</h1>
-    </div>
-    <section id="login-menu"></section>
-    <div class="login-name">
-        <input type="text" placeholder="име на потребител">
-    </div>
-    <div class="login-password">
-        <input type="text" placeholder="парола на потребител">
-    </div>
-    <button>Изпрати</button>
-    </section>
-</section>
 
-<section id="info-box">
+<section id="info-box" hidden>
     <div class="info-picture">
         <img src="photome.jpg" alt="Denislav" 
         style="border-radius: 50%; 
@@ -47,6 +34,14 @@
     </div>
 
 </section>
+<section id="login-box">
+    <form action="login.html" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required placeholder="username">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="password">
+        <input type="submit" value="Submit">
+    </section>
 
   <footer>
     <p>&copyDenislav Ivanov, 2022</p>
